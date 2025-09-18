@@ -11,3 +11,11 @@ lxml                      # HTML/XML parsing
 requests                  # for any HTTP requests
 beautifulsoup4            # optional for parsing Wikipedia pages if needed
 langgraph
+langchain-huggingface
+sentence-transformers
+transformers              # make sure it’s installed
+# ✅ install CPU-only PyTorch properly
+--index-url https://download.pytorch.org/whl/cpu
+torch
+torchvision
+torchaudio

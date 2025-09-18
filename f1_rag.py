@@ -1,6 +1,6 @@
 import streamlit as st
 import logging
-from langchain_ollama import OllamaEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_community.document_loaders import WikipediaLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
@@ -233,7 +233,7 @@ if "docs" not in st.session_state:
 # Initialize text splitter and embeddings
 # -------------------------------
 splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
-embeddings = OllamaEmbeddings(model="mxbai-embed-large")
+embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-mpnet-base-v2")
 
 # -------------------------------
 # Load or create FAISS index
@@ -355,7 +355,7 @@ app = workflow.compile(checkpointer=memory)
 # 5. Streamlit Chatbot UI
 # -------------------------------
 st.set_page_config(page_title="🏎️ F1 RAG Chatbot", page_icon="🏎️", layout="wide")
-st.title("🏎️ Formula 1 Chatbot (RAG + Memory)")
+st.title("🏎️ Formula 1 Chatbot")
 
 # Setup session history
 if "thread_id" not in st.session_state:
