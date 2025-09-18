@@ -1,0 +1,11 @@
+streamlit                 # UI
+langchain                 # core LangChain
+langchain-ollama          # Ollama embeddings
+langchain-google-genai    # Google Gemini LLM
+faiss-cpu                 # FAISS vector store
+wikipedia-api             # WikipediaLoader dependency
+ollama                    # Ollama API client
+python-dotenv             # load environment variables
+lxml                      # HTML/XML parsing
+requests                  # for any HTTP requests
+beautifulsoup4            # optional for parsing Wikipedia pages if needed
