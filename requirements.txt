@@ -10,3 +10,4 @@ python-dotenv             # load environment variables
 lxml                      # HTML/XML parsing
 requests                  # for any HTTP requests
 beautifulsoup4            # optional for parsing Wikipedia pages if needed
+langgraph
