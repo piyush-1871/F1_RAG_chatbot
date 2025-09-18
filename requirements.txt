@@ -1,6 +1,7 @@
 streamlit                 # UI
 langchain                 # core LangChain
 langchain-ollama          # Ollama embeddings
+langchain_community
 langchain-google-genai    # Google Gemini LLM
 faiss-cpu                 # FAISS vector store
 wikipedia-api             # WikipediaLoader dependency
