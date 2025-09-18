@@ -1,21 +1,23 @@
-streamlit                 # UI
-langchain                 # core LangChain
-langchain-ollama          # Ollama embeddings
+# Normal dependencies (from PyPI)
+streamlit
+langchain
+langchain-ollama
 langchain_community
-langchain-google-genai    # Google Gemini LLM
-faiss-cpu                 # FAISS vector store
-wikipedia-api             # WikipediaLoader dependency
-ollama                    # Ollama API client
-python-dotenv             # load environment variables
-lxml                      # HTML/XML parsing
-requests                  # for any HTTP requests
-beautifulsoup4            # optional for parsing Wikipedia pages if needed
+langchain-google-genai
+faiss-cpu
+wikipedia-api
+ollama
+python-dotenv
+lxml
+requests
+beautifulsoup4
 langgraph
 langchain-huggingface
 sentence-transformers
-transformers              # make sure it’s installed
-# ✅ install CPU-only PyTorch properly
---index-url https://download.pytorch.org/whl/cpu
+transformers
+
+# CPU-only PyTorch
+-f https://download.pytorch.org/whl/cpu
 torch
 torchvision
 torchaudio
